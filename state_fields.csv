@@ -1,0 +1,4 @@
+mongoexport -h ds023530.mlab.com:23530 -d testapidemo -c states -u okpif -p okpif -o state.csv --csv -f _id,name,abbreviation,homeurl,usesmicrodata,usesogp,usesrdf,usesxml,consumerprotectionurl,correctionsurl,bankingurl,votingurl,pscurl,mvadmvurl
+
+
+mongoimport -h ds023530.mlab.com:23530 -d testapidemo -c states -u okpif -p okpif --file state.csv --type csv --headerline
