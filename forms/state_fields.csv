@@ -1,0 +1,26 @@
+mongoexport -h ds023530.mlab.com:23530 -d testapidemo -c states -u okpif -p okpif -o state.csv --csv -f _id,name,abbreviation,homeurl,usesmicrodata,usesogp,usesrdf,usesxml,consumerprotectionurl,correctionsurl,bankingurl,votingurl,pscurl,mvadmvurl
+
+
+mongoimport -h ds023530.mlab.com:23530 -d testapidemo -c states -u okpif -p okpif --file state.csv --type csv --headerline
+
+
+__VIEWSTATE
+__VIEWSTATEGENERATOR
+__EVENTTARGET
+__EVENTARGUMENT
+__VIEWSTATEENCRYPTED
+__EVENTVALIDATION
+
+ctl00$MainContent$txtSearchFirstName
+ctl00$MainContent$txtSearchLastName
+ctl00$MainContent$txtDOBMonth
+ctl00$MainContent$txtDOBDay
+ctl00$MainContent$txtDOBYear
+ctl00$MainContent$txtSearchZipCode
+
+ctl00%24MainContent%24txtSearchFirstName
+ctl00%24MainContent%24txtSearchLastName
+ctl00%24MainContent%24txtDOBMonth
+ctl00%24MainContent%24txtDOBDay
+ctl00%24MainContent%24txtDOBYear
+ctl00%24MainContent%24txtSearchZipCode
