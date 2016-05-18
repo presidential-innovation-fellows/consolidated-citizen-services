@@ -1,0 +1,610 @@
+homeurl
+--
+
+http://www.alabama.gov/
+Content: 
+Content: on
+Name (MobileOptimized): Content: width
+Name (HandheldFriendly): Content: true
+Name (viewport): Content: width=device-width, initial-scale=0.7, maximum-scale=10.0
+--
+
+http://alaska.gov/
+Content: text/html; charset=iso-8859-1
+Content: en-us
+Name (author): Content: State of Alaska
+Name (keywords): Content: State of Alaska, SOA
+Name (description): Content: Official Alaska State Website
+Name (maintained_by): Content: Department of Administration, State of Alaska
+--
+
+http://az.gov/
+Content: text/html; charset=utf-8
+Name (format-detection): Content: telephone=yes
+Name (viewport): Content: width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no
+Name (Generator): Content: Drupal 7 (http://drupal.org)
+--
+
+http://www.arkansas.gov/
+Content: IE=9;IE=8;IE=7;IE=edge
+Name (description): Content: Arkansas.gov is the Official Website of the State of Arkansas. Location state services, offices, and state employees all in one convenient location.
+Name (author): Content: Information Network of Arkansas
+Name (google-site-verification): Content: MhPa6SByrRgaDT-t2-CAZ8Dueq6AD-xKKOUNX2GBlSE
+Content: 
+Name (viewport): Content: width=device-width, initial-scale=1, maximum-scale=1
+--
+
+http://www.ca.gov/
+Content: 
+Name (Author): Content: State of California
+Name (Description): Content: State of California
+Name (Keywords): Content: California, government
+Content: IE=edge
+Name (HandheldFriendly): Content: True
+Name (MobileOptimized): Content: 320
+Name (viewport): Content: width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=0
+Name (VIcurrentDateTime): Content: 635975754332995609
+Content: Find a State Park
+Content: Find a Traffic School
+Content: Check My State Tax Refund Status
+Content: Register to Vote
+--
+
+http://www.colorado.gov/
+Content: 
+Content: on
+Name (MobileOptimized): Content: width
+Name (HandheldFriendly): Content: true
+Name (Generator): Content: Drupal 7 (http://drupal.org)
+Name (viewport): Content: width=device-width, minimum-scale=1.0, maximum-scale=1.0
+--
+
+http://www.ct.gov/
+Content: 
+Content: IE=edge,chrome=1
+Name (viewport): Content: width=device-width, initial-scale=1.0
+Name (keywords): Content: Connecticut State Government; State of Connecticut;Connecticut State Portal
+Name (description): Content: Information on the State of Connecticut
+Name (author): Content: Department of Information Technology
+Name (owner): Content: Content: Contact Portal Management Group / Department of Information Technology
+Name (google-site-verification): Content: xZSrXg61fffsRLIyfd5vg8opM4-THELzPQ03jDEM3cQ
+Name (robots): Content: All
+Name (google-translate-customization): Content: 1a1afdf76954d4f1-648f6238b2da297c-gf12f60b644747ff7-6
+Name (msapplication-TileColor): Content: #0d71b8
+Name (msapplication-TileImage): Content: /images/icons/mstile-144x144.png
+Name (theme-color): Content: #ffffff
+--
+
+http://www.dc.gov
+--
+
+http://www.delaware.gov/
+--
+
+http://www.myflorida.com/
+Name (external_links): Content: true
+Content: text/html; charset=utf-8
+Name (verify-v1): Content: YOkH9g/Beq0Oye0wKPWbDQwUK2zkTb00pU4PbTTc0W4=
+--
+
+http://www.georgia.gov/
+Content: text/html; charset=utf-8
+Name (viewport): Content: width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no
+Name (description): Content: The official website of the state of Georgia. A gateway to agencies, services, forms, and other information for citizens and business people.
+Name (keywords): Content: Georgia, official, agencies, forms, renewals, child support, drivers license, jobs, food stamps, medicaid, state of Georgia, state government, window tint
+Name (generator): Content: Drupal 7 (http://drupal.org)
+Name (twitter:card): Content: summary
+Name (twitter:site): Content: @GeorgiaGov
+Name (twitter:site:id): Content: 16211061
+Name (twitter:url): Content: http://georgia.gov/
+Name (twitter:title): Content: Georgia.gov
+--
+
+http://portal.ehawaii.gov/
+Content: text/html; charset=utf-8
+Content: 
+Name (theme-color): Content: #FFE69B
+Name (google-translate-customization): Content: 7801357051b082cc-209f7ba623d8649d-gdaa728a0311bf79c-b
+Name (keywords): Content: Hawaii, Aloha, state, portal, government, agencies
+Name (description): Content: Connecting You to Hawaii State Government. Online Services, Why wait inline? Get it done online.
+Name (HandheldFriendly): Content: True
+Name (MobileOptimized): Content: 320
+Name (viewport): Content: width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0
+Content: on
+Content: IE=edge
+Name (format-detection): Content: telephone=yes
+Name (robots): Content: index, follow
+Property (og:title): Content: hawaii.gov | Official Website of the Aloha State
+Property (og:type): Content: website
+Property (og:image): Content: https://portal.ehawaii.gov/assets/images/icons/icon-200.png
+Property (og:url): Content: https://portal.ehawaii.gov/index.html
+Property (og:description): Content: Official Website of the Aloha State
+Property (og:locale): Content: en_US
+Property (og:site_name): Content: hawaii.gov
+Name (apple-mobile-web-app-title): Content: hawaii.gov
+Name (application-name): Content: hawaii.gov
+Name (msapplication-TileImage): Content: https://portal.ehawaii.gov/assets/icons/windows-tile-icon.png
+Name (msapplication-TileColor): Content: #63C1C7
+--
+
+http://www.idaho.gov/home/index.html
+Content: 
+Name (viewport): Content: width=device-width, initial-scale=1.0
+Name (description): Content: 	
+
+Name (keywords): Content: 	
+
+Name (author): Content: State of Idaho
+Name (robots): Content: index,follow
+Name (rating): Content: Safe for kids
+Name (google-site-verification): Content: IkZqKZhYSKAMFWp4aBFIkLHIbaKBpD09DK-_rF1YIiM
+--
+
+http://www.illinois.gov/Pages/default.aspx
+Content: text/html; charset=utf-8
+Content: 0
+Name (viewport): Content: width=device-width, initial-scale=1.0
+Content: IE=9
+--
+
+http://www.in.gov/
+Content: 
+Content: IE=edge,chrome=1
+Name (viewport): Content: width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1
+--
+
+http://www.iowa.gov/
+Content: IE=edge
+Content: text/html; charset=utf-8
+Name (Generator): Content: Drupal 7 (http://drupal.org)
+Name (viewport): Content: width=device-width, initial-scale=1.0, maximum-scale=1
+--
+
+http://www.kansas.gov/
+Content: IE=Edge
+Content: 
+Name (viewport): Content: width=device-width, initial-scale=1.0
+Name (description): Content: 	
+
+Name (keywords): Content: 	
+
+Name (author): Content: 	
+
+Name (google-translate-customization): Content: 143fae2f667ce440-c0b26dd96399023a-g180227416096a130-e
+--
+
+http://www.kentucky.gov/Pages/home.aspx
+Content: IE=10
+Name (GENERATOR): Content: Microsoft SharePoint
+Name (progid): Content: SharePoint.WebPartPage.Document
+Content: text/html; charset=utf-8
+Content: 0
+Name (viewport): Content: width=device-width, initial-scale=1.0, user-scalable=no
+Name (title): Content: Welcome
+Name (keywords): Content: 
+Name (description): Content: 
+Name (keywords): Content: Kentucky Government Agencies, Kentucky County Information, 
+Kentucky Business, Kentucky Education, Kentucky Employment, Kentucky Family & Health, Kentucky Government, Kentucky Residents, Kentucky Tourism
+Name (description): Content: Kentucky.gov is the official website of the Commonwealth of Kentucky
+--
+
+http://www.louisiana.gov/
+Content: text/html; charset=utf-8
+Name (norton-safeweb-site-verification): Content: y2i6jr2mjc0kyffag45r7j9t6q8fbz5thimbd5z7c56eftaqcvgafbf6ae0y27foboaoy55admydcq7cnrxartn4944q89nl81b40x4ojfkhtho-t72yf6qpm2mm2qbr
+--
+
+http://www.maine.gov/portal/index.html
+Content: 
+Content: IE=edge
+Name (description): Content: Maine.gov - Official site includes links to services available online, Governor, state agencies, Legislature, US Congressional delegation, state parks, and tax information.
+Name (author): Content: maine.gov
+Name (robots): Content: index,follow
+Name (rating): Content: Safe for kids
+Name (viewport): Content: width=device-width, initial-scale=1.0
+--
+
+http://www.maryland.gov/
+Property (og:type): Content: website
+Property (og:url): Content: http://www.maryland.gov/Pages/default.aspx
+Property (og:title): Content: default
+Property (og:image): Content: http://www.maryland.gov/_layouts/MDGov_Master/images/MDGov_OpenGraph_Devices_Logo.jpg
+Name (progid): Content: SharePoint.WebPartPage.Document
+Content: 0
+Content: IE=Edge
+Content: text/html; charset=utf-8
+Name (apple-mobile-web-app-capable): Content: yes
+Name (mobile-web-app-capable): Content: yes
+Name (apple-mobile-web-app-status-bar-style): Content: black
+Name (viewport): Content: width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0
+Name (google-translate-customization): Content: 9fd54c6a363f9f71-b5088eaa3df94aa1-g4224ef3d9bc33a80-10
+Name (google-site-verification): Content: G6z1NyxovdR1tSqddsM0DvGBbrI6gy8CDe1qMX6YM7M
+Content: 0;URL=http://www.maryland.gov:80/Pages/default.aspx?jse=0
+--
+
+http://www.mass.gov/portal/
+Content: 
+Content: en-US
+Name (robots): Content:                             index, follow                
+Content: IE=edge,chrome=1
+Name (viewport): Content: width=device-width
+Name (description): Content: The official website of the Commonwealth of Massachusetts
+Name (DC.subject.keywords): Content:                             massachusetts, state website                
+Name (publisher): Content: Mass.Gov
+Name (author): Content: portal
+Name (twitter:card): Content: summary
+Name (twitter:title): Content:                             Mass.Gov                
+Name (twitter:description): Content:                             The official website of the Commonwealth of Massachusetts                
+Property (og:title): Content:                             Mass.Gov                
+Property (og:type): Content: website
+Property (og:url): Content: http://www.mass.gov/portal/index.html
+Property (og:image): Content: http://www.mass.gov/resources/images/template/social_media_global_image.png
+Property (og:description): Content:                             The official website of the Commonwealth of Massachusetts                
+Property (og:site_name): Content: Mass.Gov
+Name (contentID): Content: 1545323
+Name (generator): Content: Percussion CM System
+Name (perc_linkback): Content: FmRgYWBmZ2Z4B2dsY3gBYmRteAZmZ2B4E2RgYWBmZ2E=
+--
+
+http://www.michigan.gov/
+Content: IE=Edge
+Name (viewport): Content: width=device-width, initial-scale=1
+Name (verify-v1): Content: vhpwGfh7lWHKqkyfNkjmRdxKazAxCrKNXMhjHMn5YxU=
+Name (verify-v1): Content: XJvgY7XlHHK6XL7wzULcrFmTqP1oCy5tZWQ7JOp4gDY=
+Name (verify-v1): Content: 1szrsGOnTx1uso+D9LEekDe+QWMMDEhDdImWPPhG5+w=
+Name (verify-v1): Content: aZSSVjp01WmX1IIQoKvkLhqCEKVia+w3kzXkqIIZnU0=
+Name (msvalidate.01): Content: A63AF9FBDDAB9CF08C839AEEECBE497D
+Property (og:image): Content: http://www.michigan.gov/images/som_fb.jpg
+Name (DESCRIPTION): Content: State of Michigan - State of Michigan
+Name (KEYWORDS): Content: State of Michigan
+--
+
+http://www.mn.gov/portal/
+Content: IE=edge
+Content: eng
+Name (description): Content: 
+Name (author): Content: 
+Name (dc.title): Content: index
+Name (dc.description): Content: 
+Name (dc.subject): Content: 
+Name (dc.created): Content: 
+Name (dc.modified): Content:  
+Name (dc.creator): Content: 
+Name (dc.contributor): Content: 
+Name (dc.publisher): Content: 
+Name (dc.audience): Content: 
+Name (dc.identifer): Content: 
+Name (dc.format): Content: 
+Name (dc.type): Content: 
+Name (dc.source): Content: 
+Name (dc.relation): Content: , 
+Name (dc.language): Content: eng, 
+Name (dc.coverage): Content: , 
+Name (dc.rights): Content: 
+Name (dc.subjectControlled): Content: 
+Name (dc.dateOther): Content: 
+Property (og:site_name): Content: Minnesota.gov
+Content: 
+Name (viewport): Content: width=device-width, initial-scale=1.0
+--
+
+http://www.mississippi.gov/Pages/default.aspx
+Content: 
+Name (viewport): Content: width=device-width, initial-scale=1.0
+Content: on
+Content: 0
+Name (google-site-verification): Content: OpiviPZGZzgoXdhyvQSIy44WpQ2cD_rUh2diWsWRZB4
+Name (apple-mobile-web-app-capable): Content: yes
+--
+
+http://www.mo.gov/
+Content: 
+Name (description): Content: The Official State of Missouri website. Find information on online services, local news, and state agencies. Governor Jay Nixon.
+Name (robots): Content: noodp
+Name (keywords): Content: missouri, mo, showme, services, plates, jay nixon
+Property (og:locale): Content: en_US
+Property (og:type): Content: website
+Property (og:title): Content: State of Missouri Website - MO.gov
+Property (og:description): Content: The Official State of Missouri website. Find information on online services, local news, and state agencies. Governor Jay Nixon.
+Property (og:url): Content: http://www.mo.gov/
+Property (og:site_name): Content: MO.gov
+Property (fb:admins): Content: 503692247
+Property (fb:admins): Content: 15900775
+Name (twitter:card): Content: summary
+Name (twitter:description): Content: The Official State of Missouri website. Find information on online services, local news, and state agencies. Governor Jay Nixon.
+Name (twitter:title): Content: State of Missouri Website - MO.gov
+Name (twitter:site): Content: @mogov
+Name (twitter:creator): Content: @mogov
+Name (msvalidate.01): Content: B10E14416731FB03683A773FFFBFC241
+Name (generator): Content: WordPress 4.5, fitted with the WordPress Mobile Pack 1.2.5
+Name (viewport): Content: width=device-width, initial-scale=1.0
+--
+
+http://mt.gov/
+Content: 
+Name (viewport): Content: width=device-width
+--
+
+http://www.nebraska.gov/
+--
+
+http://nv.gov/
+Name (google-translate-customization): Content: 346cdcecdc509e65-45f26fd0d421c975-g4b8346a3b6a0cb19-15
+--
+
+https://www.nh.gov/
+Name (description): Content: Web portal for New Hampshire State Government's community of agency web sites and services
+Name (keywords): Content: New Hampshire, state government, government, governor, agency, policy, laws, regulations, rules, licensing, registration, programs and services, residents, business, visitors, legislature, judicial, representatives, eGovernment, taxes, education, transportation, safety
+Content: text/html; charset=iso-8859-1
+--
+
+http://www.state.nj.us/
+Content: text/html; charset=UTF-8
+Name (viewport): Content: width=device-width, initial-scale=1, maximum-scale=1
+Content: IE=edge
+Name (ROBOTS): Content: NOARCHIVE
+Name (GOOGLEBOT): Content: NOARCHIVE
+Name (author): Content: mgryczon
+Name (revised): Content: 04/22/2016
+Name (keywords): Content: State of New Jersey, New Jersey, Government, State, Employment, ABout NJ, NJ Business, Transportation
+Name (description): Content: Official web site for state of NJ
+Name (WT.cg_n): Content: example
+--
+
+http://www.newmexico.gov/
+Name (description): Content: New Mexico is truly an enchanted place. Explore everything our state has to offer â from breathtaking sunsets to fabulous local cuisine, New Mexico has it all. Whether you are a citizen, visitor or have a business in our state, you can find the information you need in the stateâs official online portal â NewMexico.Gov
+Name (keywords): Content: 
+--
+
+http://www.ny.gov/
+Content: 
+Content: on
+Name (HandheldFriendly): Content: true
+Name (MobileOptimized): Content: width
+Name (description): Content: The official website of New York, the State of Opportunity. Features New York State government services, programs, news, events, social media and other information.
+Name (viewport): Content: width=device-width
+Property (og:site_name): Content: Welcome to the State of New York
+Property (og:type): Content: website
+Property (og:url): Content: http://www.ny.gov/
+Property (og:title): Content: The Official Website of New York State
+Property (og:description): Content: Welcome to the official website of New York, the State of Opportunity. Features New York State government services, programs, news, events, social media and other information.
+Property (og:image): Content: http://www.ny.gov/sites/all/themes/ny_gov/images/nygov-logo-share.png
+Name (twitter:card): Content: summary
+Name (twitter:url): Content: http://www.ny.gov/
+Name (twitter:title): Content: The Official Website of New York State
+Name (twitter:description): Content: Welcome to the official website of New York, the State of Opportunity. Features New York State government services, programs, news, events, social media and other information.
+Name (twitter:image:src): Content: http://www.ny.gov/sites/all/themes/ny_gov/images/nygov-logo-share.png
+--
+
+http://nc.gov/
+Content: IE=Edge
+Name (msapplication-TileColor): Content: #00376d
+Name (msapplication-TileImage): Content: /mstile-144x144.png
+Name (theme-color): Content: #ffffff
+Content: text/html; charset=utf-8
+Name (description): Content: NC.gov is the official website of the State of North Carolina. Get access to all state agencies, learn about North Carolina, about NC state government, and about how to start a business here.
+Name (abstract): Content: NC.gov is the official website of the State of North Carolina. Get access to all state agencies, learn about North Carolina, about NC state government, and about how to start a business here.
+Name (keywords): Content: NC, North Carolina, government
+Name (generator): Content: Drupal 7 (http://drupal.org)
+Content: on
+Name (viewport): Content: width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no
+--
+
+http://www.nd.gov/
+Content: text/html; charset=iso-8859-1
+Name (Keywords): Content: North Dakota, nd, north dakota state agency information, official portal, state government, agency, agencies, visiting, living, agriculture, tourism, economic development
+Name (Description): Content: nd.gov: Official Portal for North Dakota State Government
+Name (verify-v1): Content: geXl5jEKQM7NWUKFjc3rk30tGHYnagaqHUWu0t4g54Y=
+Name (language): Content: en
+--
+
+http://www.ohio.gov/
+Name (description): Content: Ohio.gov is the official website of the State of Ohio.
+Name (keywords): Content: Ohio, State of Ohio, Ohio Government, Ohio Government Portal, Ohio Portal, State Government
+Name (verify-v1): Content: zl0Be+PmwZv8KAg4/bQd6kh5l6B+GKpkFX7QLOtucE=
+Name (msvalidate.01): Content: ABF4733F16EB6CFA31C8AC13D9DC1ED
+Content: 
+Content: IE=edge,chrome=1
+Name (author): Content: State of Ohio
+Name (viewport): Content: initial-scale=1.0, maximum-scale=1.0, width=device-width
+--
+
+http://www.ok.gov/
+Content: IE-EmulateIE7
+Content: text/html; charset=iso-8859-15
+Name (keywords): Content: Oklahoma Official Web Site
+Name (description): Content: Welcome to Oklahoma's Official Web Site
+Name (application-name): Content: ok.gov
+Name (msapplication-TileColor): Content: #ffffff
+Name (msapplication-TileImage): Content: /images/microsofttile.png
+Name (viewport): Content: width=device-width, initial-scale=1, maximum-scale=1
+--
+
+http://www.oregon.gov/pages/index.aspx
+Name (globalsign-domain-verification): Content: y9hti_fWQpDoxgtQp7e5tVo0ulDLHxtkKy95QXDWRr
+Name (GENERATOR): Content: Microsoft SharePoint
+Name (progid): Content: SharePoint.WebPartPage.Document
+Content: 0
+Content: IE=edge,chrome=1
+Content: 
+Name (viewport): Content: width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0
+Name (description): Content: The official web site of the state of Oregon. Get quick access to Oregon government online services, forms, and information.
+--
+
+http://www.pa.gov/Pages/default.aspx#.VSPff_nF-aU
+Content: IE=edge
+Content: text/html; charset=utf-8
+Name (viewport): Content: width=device-width, minimum-scale=1.0
+Content: 0
+Name (msvalidate.01): Content: 9A4369C8CDF263C5B5C15D264A82886A
+Name (HandheldFriendly): Content: True
+Name (MobileOptimized): Content: 320
+Name (format-detection): Content: telephone=no
+Property (og:url): Content: http://www.pa.gov/Pages/default.aspx
+Property (og:type): Content: article
+Property (og:image): Content: http://www.pa.gov/PublishingImages/PAgovLogo.gif
+Name (apple-mobile-web-app-title): Content: PA.gov
+Name (robots): Content: index,follow
+Name (application-name): Content: PA.gov
+Name (description): Content: PA.gov the Official Web Site of the State of Pennsylvania - Your Access Point for all Pennsylvania State Government News, Information, Services, and Agencies.
+Name (keywords): Content: Pennsylvania, State of Pennsylvania, Official Web site of Pennsylvania, Pennsylvania Government, Governor Tom Corbett, Pennsylvania Tourism, Online Applications, Online Forms, Online Services, Services, eServices, Visiting Pennsylvania, Visit Pennsylvania, Working in Pennsylvania, Education in Pennsylvania, Busines in Pennsylvania, Pennsylvania Cities, Pennsylvania Towns, Keystone State, Pennsylvania Counties, Taxes and Government Revenue, Voting and Elections
+Name (viewport): Content: width = device-width, initial-scale=1.0
+Name (msapplication-TileColor): Content: #ffffff
+Name (google-site-verification): Content: Ys_g9yHNaUaVNzcOkcXOw2LZkZ2mKoooAaTuLmP1q_g
+--
+
+https://www.ri.gov/
+Content: 
+Name (title): Content: RI.gov: Rhode Island Government
+Name (description): Content: The Official Web Site of the State of Rhode Island
+Name (author): Content: RI.gov
+Name (robots): Content: index,follow
+Name (rating): Content: Safe for kids
+Name (originatorJurisdiction): Content: State of Rhode Island
+Name (govType): Content: state
+Name (keywords): Content: Rhode Island, State of Rhode Island, Official Web site of Rhode Island, Rhode Island Government, Governor Gina Raimondo, Rhode Island Portal, Online Applications, Online Forms, Online Services, Services, eServices, Visiting Rhode Island, Living in Rhode Island, Working in Rhode Island, Education in Rhode Island, Rhode Island Cities and Towns, Rhode Island Counties, Taxes and Government Revenue, Vital Record and Population, Voting and Elections
+Name (subjects): Content: Business and Commerce; Crime and Law Enforcement; Education; Employment; Government; History and Culture; Housing and Construction;  Laws and Regulations; Military; Consumer Protection; Recreation and Tourism; Taxes and Government Revenue; Transportation
+Name (contactCity): Content: Providence
+Name (contactState): Content: Rhode Island
+Name (contactZipcode): Content: 02908
+Name (contactPhoneNumber): Content: 401-831-8099
+Name (google-site-verification): Content: 46aKdCuFpYKpDx-OjW681NMcacMEizKIw7xGt_HJGXI
+Name (format-detection): Content: telephone=yes
+Name (apple-mobile-web-app-capable): Content: yes
+Property (fb:app_id): Content: RIGOV
+Property (og:type): Content: website
+Property (og:url): Content: https://www.ri.gov/
+Property (og:image): Content: https://www.ri.gov/img/ios/touch-icon-iphone4.png
+Property (og:title): Content: RIGOV
+Property (og:description): Content: Official Website for the State of Rhode Island
+Name (apple-mobile-web-app-title): Content: RI.gov
+Name (application-name): Content: RI.gov
+Name (msapplication-TileImage): Content: /img/windows8rigov-logo.png
+Name (msapplication-TileColor): Content: #ffffff
+Name (viewport): Content: width=device-width, initial-scale=1.0
+Content: IE=edge
+Name (HandheldFriendly): Content: True
+Name (MobileOptimized): Content: 320
+--
+
+http://sc.gov/Pages/default.aspx
+Name (GENERATOR): Content: Microsoft SharePoint
+Content: 
+Content: width=device-width, initial-scale=1.0, height=device-height, user-scalable=yes
+Name (viewport): Content: width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes
+Content: IE=edge,chrome=1
+Name (apple-mobile-web-app-capable): Content: yes
+Name (apple-mobile-web-app-status-bar-style): Content: black
+Content: 0
+Property (og:title): Content: 
+Property (og:type): Content: website
+Property (og:url): Content: 
+Property (og:image): Content: 
+Property (og:site_name): Content: SC.Gov
+Property (fb:admins): Content: 12752057990
+Name (msvalidate.01): Content: FD7F27B53AC70DA60661ABC1CA180B81
+--
+
+http://sd.gov/
+Name (rating): Content: GOVERNMENT
+Name (distribution): Content: GLOBAL
+Name (classification): Content: State Government
+Name (copyright): Content: BIT
+Name (author): Content: BIT
+Name (revisit-after): Content: 1 Days
+Content: text/html; charset=iso-8859-1
+Name (description): Content: Official site of South Dakota State government.
+Name (keywords): Content: South Dakota government, business employment, travel, online services, open government, online forms, events calendar, state employee phone book, road conditions, headlines and news, social media, governor, Amber Alert, Endangered Person Alert
+Name (viewport): Content: width=device-width, initial-scale=1, maximum-scale=1
+--
+
+http://www.tn.gov/
+Content: 
+Name (viewport): Content: width=device-width, initial-scale=1.0
+Content: IE=edge
+--
+
+http://www.texas.gov/en/Pages/default.aspx
+Name (google-site-verification): Content: USNnmTwKGtu4TUOtfh8DQfkOmo83BCelmP3uDTOscjY
+Content: 
+Content: IE=edge
+Content: 
+Name (description): Content: Access official, secure online government services and information for the State of Texas. Take it online, Texas!
+Name (keywords): Content: Texas, State of Texas, Texas website, Texas government, Texas driver license, Texas vehicle registration, Texas birth certificate, Texas driver record, Texas state agency, Texas information, Texas license, Texas permit, Texas business, Texas service, Texas record, Texas driver, Texas CHL, Texas CHIP, Texas professional, Texas occupation, Texas jobs, Texas employment, Texas open data, Texas veteran, Texas education, Texas assistance, Texas benefits, Texas recreation, Texas election, Texas voting
+Name (msapplication-TileColor): Content: #f01d4f
+Name (msapplication-TileImage): Content: http://www.texas.gov/wp-content/themes/portal-2015-theme/library/assets/favicon/mstile-144x144.png
+Name (msapplication-square70x70logo): Content: http://www.texas.gov/wp-content/themes/portal-2015-theme/library/assets/favicon/mstile-70x70.png
+Name (msapplication-square150x150logo): Content: http://www.texas.gov/wp-content/themes/portal-2015-theme/library/assets/favicon/mstile-150x150.png
+Name (msapplication-wide310x150logo): Content: http://www.texas.gov/wp-content/themes/portal-2015-theme/library/assets/favicon/mstile-310x150.png
+Name (msapplication-square310x310logo): Content: http://www.texas.gov/wp-content/themes/portal-2015-theme/library/assets/favicon/mstile-310x310.png
+Name (HandheldFriendly): Content: True
+Name (MobileOptimized): Content: 320
+Name (viewport): Content: width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no
+--
+
+http://www.utah.gov/index.html
+Content: 
+Content: IE=edge
+Name (viewport): Content: width=device-width, initial-scale=1.0, user-scalable=0
+Name (keywords): Content: Utah.gov, State of Utah, Utah State, UT, Utah County, Utah Counties, Utah Cities, Volunteer, Job Search, Government, Careers, Jobs, employment in Utah, Visiting Utah, Traviling, Touring Utah, Utah Tourism, Education in Utah, Learning About Utah, Utah State Government, Utah Information, Utah Community, Moving to Utah, Utah Weather, Utah State, Utah County, Utah counties
+--
+
+http://vermont.gov/portal/
+Name (verify-v1): Content: 3S3D4oH15l1DtgWsptFPdRwWGcqCyqlCEwLwcnpwg4o=
+Content: text/html; charset=UTF-8
+Name (title): Content: Vermont.gov - The Official State Website
+Name (description): Content: The Official Website of the State of Vermont - Your gateway to information about living, working, visiting, and doing business in Vermont, and to Vermont state government.
+Name (author): Content: Vermont.gov
+Name (robots): Content: index,follow
+--
+
+http://www.virginia.gov/
+Content: IE=edge
+Content: text/html; charset=UTF-8
+Name (CODE_LANGUAGE): Content: C#
+Name (vs_defaultClientScript): Content: JavaScript
+Name (vs_targetSchema): Content: http://schemas.microsoft.com/intellisense/ie5
+Name (viewport): Content: width=980, maximum-scale=1.0
+Name (ROBOTS): Content: INDEX, FOLLOW
+Name (description): Content: The home page for the Commonwealth of Virginia. 
+Name (google-translate-customization): Content: f6965420f350065e-f311811ac9ad0619-g68a6f08ef878971b-c
+--
+
+http://access.wa.gov/
+Content: 
+Content: IE=edge,chrome=1
+Name (google-translate-customization): Content: debed6e923d60a97-4cb3b2fd3c5d6fc6-g3de90bc7484ad203-d
+Name (viewport): Content: width=device-width, initial-scale=1.0
+--
+
+http://www.wv.gov/Pages/default.aspx#home
+Name (ProgId): Content: SharePoint.WebPartPage.Document
+Name (WebPartPageExpansion): Content: full
+Content: 
+Content: IE=edge
+Name (viewport): Content: width=device-width, initial-scale=1
+Name (google-translate-customization): Content: 56c43bdc48d2ec17-ffe4318a3ade17a4-g065e3c405793017e-a
+Property (og:image): Content: http://www.wv.gov/images/404bkimage.jpg
+Content: 0
+--
+
+https://www.wisconsin.gov/Pages/home.aspx
+Content: IE=10
+Content: IE=edge
+Name (GENERATOR): Content: Microsoft SharePoint
+Content: text/html; charset=utf-8
+Content: 0
+Name (google-site-verification): Content: 3UaH6IisbW5mcdGFD7ot4Hfy9KsrHljjoFPnWHsdWkc
+Content: text/html; charset=utf-8
+Name (viewport): Content: width=device-width, minimum-scale=1.0
+Content: 0
+--
+
+http://www.wyo.gov/
+Content: chrome=1
+Name (title): Content: State of Wyoming
+Content: State of Wyoming
+Property (og:title): Content: State of Wyoming
+Content: http://www.wyo.gov/_/rsrc/1460495670734/home/here_sm.jpg?height=79&width=200
+Property (og:image): Content: http://www.wyo.gov/_/rsrc/1460495670734/home/here_sm.jpg?height=79&width=200
+--
+

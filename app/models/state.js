@@ -2,7 +2,8 @@ var mongoose     = require('mongoose');
 var Schema       = mongoose.Schema;
 
 var StateSchema   = new Schema({
-    _id: Number,
+    num: Number,
+    date : {type: Date, default: Date.now},
     name: String,
     abbreviation: {type: String, max:2},
     homeurl: String,

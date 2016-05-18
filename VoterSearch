@@ -1,0 +1,375 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>
+
+</title>
+    <!-- TemplateEndEditable -->
+
+    <META HTTP-EQUIV='Pragma' CONTENT='no-cache'>
+    <META HTTP-EQUIV='Cache-Control' CONTENT='no-cache, no-store'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="Maryland, State, Board of Elections, voting, polling place, campaigns, candidacy, voter registration, election, elections, campaign finance, register, vote, HAVA, petitions, voting system, Maryland State Board of Elections, results, overseas">
+    <meta name="author" content="Maryland State Board of Elections">  
+    
+    <!-- Step 1 : Link to MD favicon -->
+    <link rel="shortcut icon" href="../egov/img/icons/favicon.ico">
+    <!-- Necessary Bootstrap.css for responsive design -->
+    <link href="../egov/frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="../egov/css/agency-styles.css" rel="stylesheet">
+    <link href="../egov/css/sbe-agency-styles.css" rel="stylesheet">
+    <link href="../egov/css/links.css" rel="stylesheet">
+    <!-- TemplateBeginEditable name="IE_Includes" -->
+    <!--[if ie 8]>
+    	<link id="css_IE8" href="../egov/css/ie/ie8.css" rel="stylesheet" media="screen" />
+    <![endif]-->
+    <!--[if ie 7]>
+    	<link id="css_IE7" href="../egov/css/ie/ie7.css" rel="stylesheet" media="screen" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+	    <script src="../egov/js/html5shiv.js"></script>
+    <![endif]-->
+	<!-- TemplateEndEditable -->
+	
+  <script src="../egov/js/jquery-1.8.2.min.js" type="text/javascript" ></script>
+    
+  <!-- Step 8: Necessary .js and .css for statewide alerts  -->   
+    <link rel="stylesheet" href="../egov/css/jquery-ui-1.10.3.min.css" />
+    <script src="../egov/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+  	<script type='text/javascript' src='../egov/js/MDAlertCode.js'></script>
+    
+    <!--Step 7 : Necessary .js to implement statewide search suggestion, modify .js with search collection name -->
+	<script type='text/javascript' src='../egov/js/MDsearchsuggestion.js'></script> 
+    <!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+     <!--WEB PAGE CSS GOES HERE
+    ***************************************************************-->
+    <!--<link href="~/Styles/jquery-ui.css" rel="stylesheet" type="text/css" />-->
+    <link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
+      <link href="../Styles/VPL.css" rel="stylesheet" type="text/css" />
+     
+<link href="../Styles/VPL.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/tabstyles.css" rel="stylesheet" type="text/css" />
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <!--WEB PAGE JAVASCRIPT GOES HERE
+    ***************************************************************-->
+    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../Scripts/jquery.autotab-1.1b.js"></script>
+
+ <script type="text/javascript">
+     //http://www.mathachew.com/sandbox/jquery-autotab/
+
+     $(document).ready(function () {
+             //ACCORDIAN CONTROL
+             //any item with the id of "accordian" will call the accordian functions in the jquery UI.
+             $("#accordion").accordion({ active: false, animate: false, autoHeight: false, collapsible: true });
+
+         $('#txtDOBMonth').autotab({ target: 'txtDOBDay', format: 'numeric' });
+         $('#txtDOBDay').autotab({ target: 'txtDOBYear', format: 'numeric', previous: 'txtDOBMonth' });
+//         $('#txtDOBYear').autotab({ target: 'txtSearchZipCode', format: 'numeric', previous: 'txtDOBDay' });
+
+        //remove illegal characters
+            $(document).ready(function () {
+                $("#txtSearchFirstName").blur(function () {
+                    var input = $("#txtSearchFirstName").val();
+                    input = input.replace(/[^A-Za-z\s]/g, '');
+                    $("#txtSearchFirstName").val(input);
+                });
+
+                $("#txtSearchLastName").blur(function () {
+                    var input = $("#txtSearchLastName").val();
+                    input = input.replace(/[^A-Za-z\s\-]/g, '');
+                    $("#txtSearchLastName").val(input);
+                });
+
+                $("#txtSearchZipCode").blur(function () {
+                    var input = $("#txtSearchZipCode").val();
+                    input = input.replace(/[^0-9]/g, '');
+                    $("#txtSearchZipCode").val(input);
+                });
+
+                $("#txtSearchHouseNumber").blur(function () {
+                    var input = $("#txtSearchHouseNumber").val();
+                    input = input.replace(/[^0-9]/g, '');
+                    $("#txtSearchHouseNumber").val(input);
+                });
+
+                $("#txtSearchMiddleInitial").blur(function () {
+                    var input = $("#txtSearchMiddleInitial").val();
+                    input = input.replace(/[^A-Za-z]/g, '');
+                    $("#txtSearchMiddleInitial").val(input);
+                });
+            });
+        
+     });       
+    </script>
+
+
+    <!--google analytics script-->
+ <script type="text/javascript">
+
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-32945568-1']);
+     _gaq.push(['_trackPageview']);
+
+     (function () {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+   </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="skipNav">
+            <a href="#primary_content_Block">Skip to Main Content</a>
+        </div>
+        <div id="mdgov_globalSiteWrapper">          
+            <div id="headerBlock" class="row-fluid">
+                <div id="header" class="span12">
+                    <div id="headerBackground">
+                        <div class="headerBgImg clearfix">
+                            <div class="row-fluid">
+                                <div id="agency_branding" class="clearfix">
+                                    <div id="mdgov_crownLogo" class="span2 clearfix">
+                                        <div id="mdgov_homeLink">
+                                        <!-- Step 2 : MD Crown logo and link -->
+                                            <a href="http://www.maryland.gov/">
+                                                <span class="hidden-accessible">Maryland.gov Home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="mdgov_agencyName" class="span7 clearfix">
+                                        <div id="mdgov_agencyTitle">
+                                        <!-- Step 3 : Add Agency Title and link to home page -->
+                                            <a href="http://www.elections.maryland.gov/">
+                                                <img src="../egov/img/sbetitle.png" alt="The Maryland State Board of Elections" />
+                                            </a>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                </div>
+            </div> <!--end headerblock-->
+            <div id="navBlock" class="row-fluid">
+                <div id="mdgov_enterpriseNavigation" class="clearfix">
+                <!-- Step 9 : Add Main navigation links -->
+                    <nav>
+    				<ul>    
+                            <li><a href="PollingPlaceSearch" id="poll_lookup" class="level0">find your polling place</a></li>
+                   		 	<li><a href="VoterSearch" id="voter_lookup" class="level0">lookup your voter info</a></li>
+                    		<li><a href="OnlineVoterRegistration" id="register" class="level0">register to vote</a></li>
+                    		<li><a href="OnlineVoterRegistration" id="request_ballot" class="level0">request a ballot</a></li>                              
+                        </ul>                
+                    </nav> 
+                </div> <!--end mdgov_enterpriseNavigation-->
+            </div> <!--end navBlock-->
+		<!--begin primary content area-->
+    
+         <div class="row-fluid">
+				<!-- TemplateBeginEditable name="ContentRegion" -->
+                   <!--WEB PAGE HEADER GOES HERE
+                ***************************************************************-->
+                  <div id="sectionhead">
+                   <h1> 
+    Voter Lookup
+ 
+                    </h1>
+                  </div> <!--end sectionhead-->
+        </div> <!--end row-fluid-->
+                     <!--WEB PAGE CONTENT GOES HERE
+                ***************************************************************-->
+        <div id="main-page-content">
+                 
+
+<form method="post" action="VoterSearch" id="form1" autocomplete="off">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="3VcG3lMBIuWMpgTzklw/pLTwvUVce1EIhWI69S7Q8f2AqVuVdSqGe9rbDW9SbQzBG8bvx4vaKUXeiD2jEW1bQKB+rfQ=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5A425A6D" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="x+2PKWe9jqHXdpbklMcfhib5Hxzg6CizRCqOb0aZKdp8j/nBpvk/JBBPdVKLaJHxoGuKRwh7daEc7ed/Yhrps8+35OohseRgxNxoVC+yRqD5K3EnN+Kko2gJRB9/bbBJ9D2caPMeYXIqr0qkzJiJKrQodTwUje86Y+W4DRRJcvpFK1keFO890C0iYkgzxS6y53PHP54WIXl6ITZkpLPn9z5Lh8LNbptITrAakPfqdcOOy0r205e8yvSK81HKcpcMqashQVjkdxGUqCP0JajTVvOFofUhnS4x6vT+OurEi7KYGVsvDVocYnuzush19f5Vkbj7BAVtf6Kw/VNsQ0tfOB1beUKJ48tNJ4WmiVxKE+Lu10DkN1owxYtCpxWpPeUU8mxVktaufAoRvEJVZgNatRNnoP8=" />
+
+    <span id="languagedropdown">
+        <select name="ctl00$MainContent$listLanguages" id="listLanguages" title="Website Language Options">
+	<option selected="selected" value="en">English</option>
+	<option value="es">Espa&#241;ol</option>
+
+</select> 
+                           
+        <input type="submit" name="ctl00$MainContent$btnChangeLanguage" value="Change Language" id="MainContent_btnChangeLanguage" style="font-size: 80%;" />
+    </span> 
+    
+
+    <div style="clear:both;"></div>
+    <br />
+
+    <p style="font-weight: bold">
+        We update this website daily.  If you submitted information today, you will not be able to see it yet.  If you submitted information online or at the MVA, it may take up to 3 weeks to appear on this website. 
+            </p>
+            <br />
+
+        <fieldset id="SearchResults" class="results">
+            <legend> 
+                <span id="litResultsHeader">You can use this tool to:</span>
+            </legend>
+
+            <!--Instructions-->
+            <ul id="MainContent_listInstructions" class="show">
+	<li>Review your voter registration record.</li><li>Request a duplicate voter registration card.</li><li>Find out where to vote.</li><li>Find out your voting districts.</li><li>Find out your local board of elections.</li><li>See the status of your absentee or provisional ballot.</li><li>View your sample ballot.</li>
+</ul>
+
+           <!--   <div class = "footnote" style="clear: both">-->
+    <!--</div>-->
+        </fieldset>
+
+        
+    <div id="MainContent_pnlFormContents">
+	
+
+        <fieldset class="search">
+            <legend>
+                Search
+            </legend>
+           
+         
+
+        <!--    <p class="instructions">-->
+
+             <!--No match found error message-->
+            <span>
+                <span id="litNoMatchFoundHeader" class="validationmsg hide">Based on what you entered, we were unable to find any information.</span>
+                <br />
+                <span id="litNoMatchFound" class="hide">Before trying again, please: <br /><ul><li>Enter your name the same way you registered to vote.  For example, if you registered to vote as “Jeff” instead of “Jeffrey,” use “Jeff” for the search.</li><li>If you moved recently, enter the zip code where you lived before.</li><li>If you changed your name recently, enter your former name.</li><li>If you believe you are registered but you still cannot find your information, <a href="http://www.elections.maryland.gov/about/county_boards.html" target="_blank"> contact your local board of elections.</a></li><li>If you have not registered before, you may <a href="OnlineVoterRegistration"> register to vote online.</a></li></ul><br />Remember that it may take up to 3 weeks after your registration was submitted for the data to get posted to this site.</span>
+            </span>           
+
+
+      
+   <!-- </p>-->
+
+    <!--Error messages-->
+    <p class="error">
+        
+        <input name="ctl00$MainContent$litAccessibleError" type="text" readonly="readonly" id="litAccessibleError" title="The following fields are invalid:" class="validationmsg-headermessage hide" />
+    </p>
+
+        <!--First Name-->
+        <label for="txtSearchFirstName" id="MainContent_litFirstNameLabel">First Name:</label>
+        <div class="instructionClarification">
+            Provide your first name as it appears on your voter registration record.
+        </div>
+        <input name="ctl00$MainContent$txtSearchFirstName" type="text" maxlength="30" id="txtSearchFirstName" Name="txtSearchFirstName" autocomplete="off" />
+        <span id="MainContent_litInvalidFirstName" class="validationmsg hide">First name is required and may contain only letters and spaces.</span>
+        <!--end first name-->
+
+        <!--Last Name-->
+        <label for="txtSearchLastName" id="MainContent_litLastNameLabel">Last Name:</label>
+        <div class="instructionClarification">
+            Provide your last name as it appears on your voter registration record.
+        </div>
+        <input name="ctl00$MainContent$txtSearchLastName" type="text" maxlength="30" id="txtSearchLastName" Name="txtSearchLastName" autocomplete="off" />
+        <span id="MainContent_litInvalidLastName" class="validationmsg hide">Last name is required and may contain only letters, hyphens, and spaces.</span>
+        <!--end last name-->
+
+        <!--Date of Birth-->      
+        <label for="MainContent_SearchDateOfBirth" id="MainContent_litDateOfBirthLabel">Date Of Birth:</label>
+        <div class="instructionClarification">
+            Provide your date of birth as it appears on your voter registration record.
+        </div>
+        <div id="MainContent_SearchDateOfBirth">
+		
+
+            <!--Date of birth as textboxes-->
+            <!--DOB Month-->
+            <label for="txtDOBMonth" id="MainContent_litDOBMonthLabel" class="date">Month:</label>
+            <input name="ctl00$MainContent$txtDOBMonth" type="text" maxlength="2" id="txtDOBMonth" Size="30" autocomplete="off" placeholder="MM" />
+
+            <!--DOB Day-->
+            <label for="txtDOBDay" id="MainContent_litDOBDayLabel" class="date">Day:</label>
+            <input name="ctl00$MainContent$txtDOBDay" type="text" maxlength="2" id="txtDOBDay" Size="30" autocomplete="off" placeholder="DD" />
+
+            <!--DOB Year-->
+            <label for="txtDOBYear" id="MainContent_litDOBYearLabel" class="date">Year:</label>
+            <input name="ctl00$MainContent$txtDOBYear" type="text" maxlength="4" id="txtDOBYear" Size="30" autocomplete="off" placeholder="YYYY" />
+
+
+	</div>
+       
+        <span id="MainContent_litInvalidDateOfBirth" class="validationmsg hide">Date of birth is required. Month should be between 1 and 12. Day should be between 1 and 31. Year should be between 1911 and 2000.</span>
+
+        <!--Zip Code-->
+        <label for="txtSearchZipCode" id="MainContent_litZipCodeLabel">Zip Code:</label>  
+        <div class="instructionClarification">Provide the 5 digit zip code of the Maryland residential address provided on your voter registration record.</div>      
+        <input name="ctl00$MainContent$txtSearchZipCode" type="text" maxlength="5" id="txtSearchZipCode" Name="txtSearchZipCode" class="autocomplete" autocomplete="off" />
+        <span id="MainContent_litInvalidZipCode" class="validationmsg hide">Zip code is required and must be exactly 5 numeric characters.</span>
+        
+        
+        <div id="MainContent_ExtraParameters" class="hidden">
+                
+        <!--HouseNumber-->                
+        <label for="txtSearchHouseNumber" id="MainContent_litHouseNumberLabel">Street Number:</label>
+        <div class="instructionClarification">Provide the street number of the Maryland residential address provided on your voter registration record. Letters and 1/2 indicators are not necessary.</div>        
+        <input name="ctl00$MainContent$txtSearchHouseNumber" type="text" maxlength="10" id="txtSearchHouseNumber" Name="txtSearchHouseNumber" class="autocomplete" autocomplete="off" />
+        <span id="MainContent_litInvalidHouseNumber" class="validationmsg hide">Street number must contain only numbers, letters, commas, hyphens, and forward slashes.</span>   
+
+        <!--MiddleInitial -->
+        <label for="txtSearchMiddleInitial" id="MainContent_litMiddleInitialLabel">Middle Initial:</label>
+        <div class="instructionClarification">Provide your middle initial as it appears on your voter registration record.</div>            
+        <input name="ctl00$MainContent$txtSearchMiddleInitial" type="text" maxlength="1" id="txtSearchMiddleInitial" Name="txtSearchMiddleInitial" class="autocomplete" autocomplete="off" />               
+        <span id="litInvalidMiddleInitial" class="validationmsg hide">Middle initial can be only a single alpha character.</span>     
+        </div>
+
+            <div id="navbuttons">
+            <input type="submit" name="ctl00$MainContent$btnSearch" value="Search" id="MainContent_btnSearch" class="search" />&nbsp;
+            <input type="submit" name="ctl00$MainContent$btnClear" value="Clear" id="MainContent_btnClear" />
+             </div>  
+
+        </fieldset>
+        <!--END SEARCH-->
+        
+</div>
+   </form> 
+
+
+   
+				<!-- TemplateEndEditable -->       
+         </div> <!--end main-page-content-->
+            <div class="row-fluid">
+                <div id="footer_block" class="clearfix">
+                    <div class="span9">
+                        <div id="footer_left">
+                            <div class="cl_base_hNav footerLinks">
+                            <!-- Step 12: Add agency footer links -->
+                                <ul class="span12">
+                                    <li><a href="http://elections.maryland.gov/about/index.html" id="about_us">About Us</a></li>                     
+                                    <li><a href="http://elections.maryland.gov/about/contact.html" id="contact_sbe">Contact SBE</a></li>
+                                    <li><a href="http://elections.maryland.gov/about/county_boards.html" id="contact_lbe">Contact your Local Board of Elections</a></li> 
+                      			    <li><a href="http://elections.maryland.gov/privacy.html" id="privacy">Privacy</a></li>
+                      			    <li><a href="http://elections.maryland.gov/accessibility.html" id="accessibility">Accessibility</a></li> 
+                                </ul>
+                            </div> <!-- end cl_base_hNav->
+                            <!-- Step 13 : Add agency address and phone -->
+                            <p>151 West Street, Suite 200, Annapolis, MD 21401</p>
+              			    <p>(410) 269-2840 / (800) 222-8683 / 
+                            <a href="mailto:info.sbe@maryland.gov">info.sbe@maryland.gov</a></p>
+                        </div> <!--end footer_left-->
+                    </div> <!--end span9-->              
+           		</div> <!--end footer_block-->
+      		</div> <!--end row-fluid-->
+	    </div> <!--end mdgov_globalSiteWrapper-->
+ </div> <!--end container-->
+        <script src="../egov/js/base.js"></script>
+</body>
+</html>

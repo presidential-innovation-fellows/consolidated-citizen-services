@@ -4,11 +4,11 @@
 
 $md_voterreg_url = "https://voterservices.elections.state.md.us/VoterSearch";
 
-/*$firstname="firstname";
-$lastname="lastname";
+/*$firstname="test";
+$lastname="test";
 $birthmonth="01";
-$birthday="01";
-$birthyear="1901";
+$birthday="02";
+$birthyear="1981";
 $zipcode="20815";*/
 
 $firstname=$_POST["first-name"];
@@ -24,7 +24,7 @@ $cookie_name = "user";
 $cookie_value = "John Doe";
 setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 
-function submit_md_form($url,$firstname,$lastname,$birthmonth,$birthyear,$zipcode)
+function submit_md_form($url,$firstname,$lastname,$birthday,$birthmonth,$birthyear,$zipcode)
 {
     
 $ch = curl_init();
@@ -40,7 +40,7 @@ curl_setopt($ch, CURLOPT_COOKIEFILE, $jar);
  
 
 $data = curl_exec($ch);
-var_dump(implode('', file($jar)));
+//var_dump(implode('', file($jar)));
     
 //each of the fields below is from the MD voter registration form ASPX page
 
@@ -48,33 +48,33 @@ var_dump(implode('', file($jar)));
 //grab the Viewstate value
 $content = explode('value="', stristr($data, 'id="__VIEWSTATE"'));
 $viewstate = substr($content[1], 0, strpos($content[1], '"'));
-var_dump($viewstate);
+//var_dump($viewstate);
 
 //grab the Viewstategenerator value
 $content = explode('value="', stristr($data, 'id="__VIEWSTATEGENERATOR"'));
 $viewstategenerator = substr($content[1], 0, strpos($content[1], '"'));
-var_dump($viewstategenerator);
+//var_dump($viewstategenerator);
     
 //grab the eventtarget value    
 $content = explode('value="', stristr($data, 'id="__EVENTTARGET"'));
 $eventtarget = substr($content[1], 0, strpos($content[1], '"'));
-var_dump($eventtarget);
+//var_dump($eventtarget);
     
     
 //grab the eventargument value
 $content = explode('value="', stristr($data, 'id="__EVENTARGUMENT"'));
 $eventargument = substr($content[1], 0, strpos($content[1], '"'));
-var_dump($eventargument);
+//var_dump($eventargument);
     
 //grab the viewstateencrypted value    
 $content = explode('value="', stristr($data, 'id="__VIEWSTATEENCRYPTED"'));
 $viewstateencrypted = substr($content[1], 0, strpos($content[1], '"'));
-var_dump($viewstateencrypted);
+//var_dump($viewstateencrypted);
 
 //grab the eventvalidation value    
 $content = explode('value="', stristr($data, 'id="__EVENTVALIDATION"'));
 $validation = substr($content[1], 0, strpos($content[1], '"'));
-var_dump($validation);
+//var_dump($validation);
     
 $postfields = array(
     "__VIEWSTATE" => rawurlencode($viewstate),
@@ -94,7 +94,7 @@ $postfields = array(
     
    
 );
-var_dump($postfields);
+//var_dump($postfields);
     
     $p = "";
 foreach($postfields as $k=>$v) {
@@ -107,13 +107,13 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $p);
 $ret = curl_exec($ch);//Get result after login page.
 
     //this contains 'You have entered an invalid password' so it works as expected.
-var_dump($ret);
+echo($ret);
     
 curl_close($ch);
 
 return $data;
 }
 
-submit_md_form($md_voterreg_url,$firstname,$lastname,$birthmonth,$birthyear,$zipcode);
+submit_md_form($md_voterreg_url,$firstname,$lastname,$birthday,$birthmonth,$birthyear,$zipcode);
 
 ?>

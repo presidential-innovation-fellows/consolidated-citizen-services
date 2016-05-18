@@ -49,8 +49,8 @@ router.route('/states')
     .post(function(req, res) {
         
         var state = new State();      // create a new instance of the state model
-    
-        state._id = req.body._id,  // set the states name (comes from the request)
+        state.num = req.body.num,  // set the states name (comes from the request)
+        state.date = req.body.date, //timestamp?    
         state.name = req.body.name,  // set the states name (comes from the request)
         state.abbreviation = req.body.abbreviation,
         state.homeurl = req.body.homeurl,
@@ -102,8 +102,10 @@ router.route('/states/:state_id')
 
             if (err)
                 res.send('Error: '+err);
-            //state._id = req.body._id,  // set the states name (comes from the request)
+            //state._id = req.body._id,  
+            state.num = req.body.num,
             state.name = req.body.name,  // update the states info
+            state.date = req.body.date,    
             state.abbreviation = req.body.abbreviation,
             state.homeurl = req.body.homeurl,
             state.language = req.body.language,

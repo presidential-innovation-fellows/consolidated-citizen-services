@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+head
+  title Consolidated Citizen Services Sprint - Status Page
+  link(href='/uswds.min.css', rel='stylesheet')
+  script(type='text/javascript', src='/uswds.min.js')
+
+body
+  h1
+    | Consolidated Citizen Services Sprint - Status Page
+
+  h2
+    | States using OGP:
+  table
+    tr
+      td # of States Covered
+      td= count
+    tr
+      td # of States Using OGP
+      td= ogptrues_count
+    tr
+      td # of States Using RDF
+      td= rdftrues_count
+    tr
+      td # of States Using XML
+      td= xmltrues_count
+  hr
+  table
+    tr
+      td Abbreviation
+      td Name
+      td Uses Microdata
+      td Uses Open Graph Protocol
+      td Uses RDF
+      td Uses XML
+    each state in states.length ? states: ['None']
+      tr  
+        td= state.abbreviation
+        td= state.name
+        td= state.usesmicrodata
+        td= state.usesogp
+        td= state.usesrdf
+        td= state.usesxml
+  hr
+  h2
+    | States using OGP:
+  ul
+    each val in values.length ? values: ['None']
+      li= val.name
+  hr
+  hr

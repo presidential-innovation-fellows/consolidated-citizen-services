@@ -4,6 +4,8 @@
   "dependencies": {
     "body-parser": "*",
     "express": "~4.0.0",
-    "mongoose": "^4.4.12"
+    "mongoose": "^4.4.12",
+    "mongodb": "*",
+    "build": "*"
   }
 }
