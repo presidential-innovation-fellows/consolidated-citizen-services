@@ -13,7 +13,7 @@ body
     | States using OGP:
   table
     tr
-      td # of States Covered
+      td # of States Counted
       td= count
     tr
       td # of States Using OGP
@@ -22,17 +22,34 @@ body
       td # of States Using RDF
       td= rdftrues_count
     tr
-      td # of States Using XML
-      td= xmltrues_count
+      td # of States Using Microdata
+      td= microtrues_count
+    tr
+      td # of States Offering Spanish 
+      td= spanish_count
+    tr
+      td # of States Offering Google Translate
+      td= languages_count
+    tr
+      td # of States Offering Online Voter Registration
+      td= olvr_count
+    tr
+      td # of States Offering Online Registration Check
+      td= olrc_count
   hr
   table
     tr
       td Abbreviation
       td Name
-      td Uses Microdata
+      td Uses Microdata*
       td Uses Open Graph Protocol
       td Uses RDF
-      td Uses XML
+      td Online Voter Registration
+      td Check Your Registration Online
+      td Language Translations?**
+      td Featured Service
+      td Featured Service
+      td Featured Service
     each state in states.length ? states: ['None']
       tr  
         td= state.abbreviation
@@ -40,12 +57,18 @@ body
         td= state.usesmicrodata
         td= state.usesogp
         td= state.usesrdf
-        td= state.usesxml
+        td= state.olvr
+        td= state.olrc
+        td= state.language
+        td= state.service1
+        td= state.service2
+        td= state.service3
   hr
-  h2
-    | States using OGP:
-  ul
-    each val in values.length ? values: ['None']
-      li= val.name
-  hr
-  hr
+  |* Microdata: 0 = none, 1 = schema.org or similar, 2 = XMLNS
+  br
+  |** Languages: 0 = English only, 1 = English/Spanish, 2 = Google Translate, 3 = Custom Translation Tool
+//  h2
+//    | States using OGP:
+//  ul
+//    each val in values.length ? values: ['None']
+//      li= val.name

@@ -17,11 +17,20 @@ var statecount;
 var statelist;
 var ogptrues;
 var rdftrues;
-var xmltrues;
+var microtrues;
+var languages;
+var spanish;
+var olvr;
+var olrc;
+
 
 var ogptrues_count;
 var rdftrues_count;
-var xmltrues_count;
+var microtrues_count;
+var languages_count;
+var spanish_count;
+var olvr_count;
+var olrc_count;
 
 var message = "";
 
@@ -55,7 +64,7 @@ app.get ('/', function (req,res) {
     
     
 
-var statecollection = db.collection("states");
+var statecollection = db.collection("stateinfo");
  
 
     statecollection.count( function(err, cnt) {
@@ -76,6 +85,64 @@ var statecollection = db.collection("states");
     
 message = message + "There are " + statecount+ " states.";
 
+    //find states that offer spanish
+    statecollection.find({language: 1}).toArray(function(err,docs){
+          if (err) 
+       {
+           return console.error(err);
+       }
+        else {
+            spanish = docs;
+            spanish_count = docs.length;
+            
+        } 
+        
+    }); //close spanish function
+    
+     //find states that offer multiple transliation
+    statecollection.find({language: {$gte: 2}}).toArray(function(err,docs){
+          if (err) 
+       {
+           return console.error(err);
+       }
+        else {
+            languages = docs;
+            languages_count = docs.length;
+            
+        } 
+        
+    }); //close multitranslate function
+    
+       //find states that offer online voter registration
+    statecollection.find({olvr: 1}).toArray(function(err,docs){
+          if (err) 
+       {
+           return console.error(err);
+       }
+        else {
+            olvr = docs;
+            olvr_count = docs.length;
+            
+        } 
+        
+    }); //close online voter registration function
+    
+    //find states that offer online registration check
+    statecollection.find({olrc: 1}).toArray(function(err,docs){
+          if (err) 
+       {
+           return console.error(err);
+       }
+        else {
+            olrc = docs;
+            olrc_count = docs.length;
+            
+        } 
+        
+    }); //close online registration check
+    
+    
+    
     //find states that use open graph
     statecollection.find({usesogp: 1}).toArray(function(err,docs){
           if (err) 
@@ -108,25 +175,25 @@ message = message + "There are " + statecount+ " states.";
         
     }); //close rdf count function
     
-       //find states that use XML
-    statecollection.find({usesxml: 1}).toArray(function(err,docs){
+       //find states that use microdata
+    statecollection.find({usesmicrodata: {$gte: 1}}).toArray(function(err,docs){
           if (err) 
        {
            return console.error(err);
        }
         else {
             
-            xmltrues_count = docs.length;
+            microtrues_count = docs.length;
             
         } 
         
-    }); //close XML count function
+    }); //close Microdata count function
 
     //find all documents
     statecollection.find().toArray(function(err, docs) {
           console.log("Printing docs from Array")
         statelist = docs;
-          res.render('index.pug', {values: ogptrues,ogptrues_count: ogptrues_count,rdftrues_count: rdftrues_count,xmltrues_count: xmltrues_count, states: statelist,count: statecount, maintainer: {name: 'Olivier Kamanda', email: 'olivier.kamanda@pif.gov', www:'http://www.pif.gov'}});
+          res.render('index.pug', {values: ogptrues,ogptrues_count: ogptrues_count,rdftrues_count: rdftrues_count,microtrues_count: microtrues_count,spanish_count: spanish_count, languages_count: languages_count, olvr_count: olvr_count, olrc_count:olrc_count, states: statelist,count: statecount, maintainer: {name: 'Olivier Kamanda', email: 'olivier.kamanda@pif.gov', www:'http://www.pif.gov'}});
         
           docs.forEach(function(doc) {
             console.log("Name: "+doc.name);
