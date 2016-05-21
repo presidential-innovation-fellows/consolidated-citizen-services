@@ -1,0 +1,21 @@
+{
+  "name": "ccs-kamanda",
+   "scripts": {
+ "start": "node server.js"
+ },
+    "version":"0.0.1",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "~4.0.0",
+    "mongoose": "^4.4.12",
+    "morgan": "*",  
+    "mongodb": "*",
+    "cookie-parser": "*",  
+    "pug": "*",
+    "path": "*"    
+  },
+    "engines": {
+    "node": "4.4.2",
+    "npm": "3.8.5"
+}
+}
