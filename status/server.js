@@ -10,6 +10,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
 // New Code
 var mongo = require('mongodb');
 
@@ -153,7 +154,7 @@ message = message + "There are " + statecount+ " states.";
             ogptrues = docs;
             ogptrues_count = docs.length;
             docs.forEach(function(doc) {
-                console.log("OGP name "+ doc.name);
+                //console.log("OGP name "+ doc.name);
                 
                 
             });
@@ -193,10 +194,10 @@ message = message + "There are " + statecount+ " states.";
     statecollection.find().toArray(function(err, docs) {
           console.log("Printing docs from Array")
         statelist = docs;
-          res.render('index.pug', {values: ogptrues,ogptrues_count: ogptrues_count,rdftrues_count: rdftrues_count,microtrues_count: microtrues_count,spanish_count: spanish_count, languages_count: languages_count, olvr_count: olvr_count, olrc_count:olrc_count, states: statelist,count: statecount, maintainer: {name: 'Olivier Kamanda', email: 'olivier.kamanda@pif.gov', www:'http://www.pif.gov'}});
+          res.render('index_ccs.pug', {values: ogptrues,ogptrues_count: ogptrues_count,rdftrues_count: rdftrues_count,microtrues_count: microtrues_count,spanish_count: spanish_count, languages_count: languages_count, olvr_count: olvr_count, olrc_count:olrc_count, states: statelist,count: statecount, maintainer: {name: 'Olivier Kamanda', email: 'olivier.kamanda@pif.gov', www:'http://www.pif.gov'}});
         
           docs.forEach(function(doc) {
-            console.log("Name: "+doc.name);
+            //console.log("Name: "+doc.name);
             //console.log("Number: "+doc._id);
             //console.log("Abbreviation: "+doc.abbreviation);
             //console.log("URL: "+doc.homeurl);  

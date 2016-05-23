@@ -12,7 +12,11 @@
     "mongodb": "*",
     "cookie-parser": "*",  
     "pug": "*",
-    "path": "*"    
+    "path": "*",
+    "datamaps":"0.5.4",
+    "topojson":"1.6.26",
+    "d3":"3.5.17"
+      
   },
     "engines": {
     "node": "4.4.2",
