@@ -11,24 +11,26 @@ body
   script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js')
   script(type='text/javascript', src='/datamaps.usa.min.js')
   #foobar
-  #map_ccs.map(style='border:1px dotted blue; width: 700px; height: 475px; position: relative;')
+  h1
+    | Consolidated Citizen Services Sprint - Status Page
+  #map_ccs.map(style='border:1px dotted blue; width: 700px; height: 475px; position: relative; margin-top:0px; margin-bottom:0px; margin-right:auto;margin-left:auto')
       
   script.
     var election = new Datamap({scope: 'usa', element: document.getElementById('map_ccs'), geographyConfig: {
     highlightBorderColor: '#bada55', popupTemplate: function(geography, data) {return '<div class="hoverinfo">' +geography.properties.name + '<br> State Name: '+data.statename+ '<br> Check Voter Registration Online?:' +  data.olrc + '<br> Online Voter Reg?'+data.olvr+ '<br> Uses Microdata? '+data.microdata+'<br> Uses OGP? '+data.usesogp+'<br> Uses RDF '+data.usesrdf+'<br> Translations?'+data.language},highlightBorderWidth: 3},
-    fills: {'Green': '#00FF00','Yellow': '#EDDC4E','Red': '#B22222',defaultFill: '#B22222'},
+    fills: {'0': '#00FF00','1': '#EDDC4E','2': '#B22222',defaultFill: '#B22222'},
     
     data:{"AZ": {
-      "fillKey": "Green",
+      "fillKey": "#{states[2].usesmicrodata.toString()}",
       "statename":"#{states[2].name.toString()}",
-      "olrc":(#{states[3].olrc.toString()}>0)? "Yes" : "No",
-      "olvr":(#{states[3].olvr.toString()}>0)? "Yes" : "No",
-      "microdata":(#{states[3].usesmicrodata.toString()}>0)? "Yes": "No",
-      "usesogp":(#{states[3].usesogp.toString()}>0)? "Yes" : "No",
-      "usesrdf":(#{states[3].usesrdf.toString()}>0)? "Yes" : "No",
-      "language":(#{states[3].language.toString()}>1)?"Yes": "No"},
+      "olrc":(#{states[2].olrc.toString()}>0)? "Yes" : "No",
+      "olvr":(#{states[2].olvr.toString()}>0)? "Yes" : "No",
+      "microdata":(#{states[2].usesmicrodata.toString()}>0)? "Yes": "No",
+      "usesogp":(#{states[2].usesogp.toString()}>0)? "Yes" : "No",
+      "usesrdf":(#{states[2].usesrdf.toString()}>0)? "Yes" : "No",
+      "language":(#{states[2].language.toString()}>1)?"Yes": "No"},
     "CO": {
-      "fillKey": "Green",
+      "fillKey": "#{states[5].usesmicrodata.toString()}",
       "statename":"#{states[5].name.toString()}",
       "olrc":(#{states[5].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[5].olvr.toString()}>0)? "Yes" : "No",
@@ -37,7 +39,7 @@ body
       "usesrdf":(#{states[5].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[5].language.toString()}>1)?"Yes": "No"},
     "DE": {
-      "fillKey": "Green",
+      "fillKey": "#{states[8].usesmicrodata.toString()}",
       "statename":"#{states[8].name.toString()}",
       "olrc":(#{states[8].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[8].olvr.toString()}>0)? "Yes" : "No",
@@ -46,7 +48,7 @@ body
       "usesrdf":(#{states[8].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[8].language.toString()}>1)?"Yes": "No"},
     "FL": {
-      "fillKey": "Green",
+      "fillKey": "#{states[9].usesmicrodata.toString()}",
       "statename":"#{states[9].name.toString()}",
       "olrc":(#{states[9].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[9].olvr.toString()}>0)? "Yes" : "No",
@@ -55,7 +57,7 @@ body
       "usesrdf":(#{states[9].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[9].language.toString()}>1)?"Yes": "No"},
     "GA": {
-      "fillKey": "Green",
+      "fillKey": "#{states[10].usesmicrodata.toString()}",
       "statename":"#{states[10].name.toString()}",
       "olrc":(#{states[10].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[10].olvr.toString()}>0)? "Yes" : "No",
@@ -64,7 +66,7 @@ body
       "usesrdf":(#{states[10].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[10].language.toString()}>1)?"Yes": "No"},
     "HI": {
-      "fillKey": "Green",
+      "fillKey": "#{states[11].usesmicrodata.toString()}",
       "statename":"#{states[11].name.toString()}",
       "olrc":(#{states[11].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[11].olvr.toString()}>0)? "Yes" : "No",
@@ -73,7 +75,7 @@ body
       "usesrdf":(#{states[11].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[11].language.toString()}>1)?"Yes": "No"},
     "ID": {
-      "fillKey": "Green",
+      "fillKey": "#{states[12].usesmicrodata.toString()}",
       "statename":"#{states[12].name.toString()}",
       "olrc":(#{states[12].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[12].olvr.toString()}>0)? "Yes" : "No",
@@ -82,7 +84,7 @@ body
       "usesrdf":(#{states[12].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[12].language.toString()}>1)?"Yes": "No"},
     "IL": {
-      "fillKey": "Green",
+      "fillKey": "#{states[13].usesmicrodata.toString()}",
       "statename":"#{states[13].name.toString()}",
       "olrc":(#{states[13].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[13].olvr.toString()}>0)? "Yes" : "No",
@@ -91,7 +93,7 @@ body
       "usesrdf":(#{states[13].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[13].language.toString()}>1)?"Yes": "No"},
     "IN": {
-      "fillKey": "Green",
+      "fillKey": "#{states[14].usesmicrodata.toString()}",
       "statename":"#{states[14].name.toString()}",
       "olrc":(#{states[14].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[14].olvr.toString()}>0)? "Yes" : "No",
@@ -100,7 +102,7 @@ body
       "usesrdf":(#{states[14].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[14].language.toString()}>1)?"Yes": "No"},
     "IA": {
-      "fillKey": "Green",
+      "fillKey": "#{states[15].usesmicrodata.toString()}",
       "statename":"#{states[15].name.toString()}",
       "olrc":(#{states[15].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[15].olvr.toString()}>0)? "Yes" : "No",
@@ -109,7 +111,7 @@ body
       "usesrdf":(#{states[15].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[15].language.toString()}>1)?"Yes": "No"},
     "KS": {
-      "fillKey": "Red",
+      "fillKey": "#{states[16].usesmicrodata.toString()}",
       "statename":"#{states[16].name.toString()}",
       "olrc":(#{states[16].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[16].olvr.toString()}>0)? "Yes" : "No",
@@ -118,7 +120,7 @@ body
       "usesrdf":(#{states[16].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[16].language.toString()}>1)?"Yes": "No"},
     "KY": {
-      "fillKey": "Red",
+      "fillKey": "#{states[17].usesmicrodata.toString()}",
       "statename":"#{states[17].name.toString()}",
       "olrc":(#{states[17].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[17].olvr.toString()}>0)? "Yes" : "No",
@@ -127,7 +129,7 @@ body
       "usesrdf":(#{states[17].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[17].language.toString()}>1)?"Yes": "No"},
     "LA": {
-      "fillKey": "Red",
+      "fillKey": "#{states[19].usesmicrodata.toString()}",
       "statename":"#{states[19].name.toString()}",
       "olrc":(#{states[19].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[19].olvr.toString()}>0)? "Yes" : "No",
@@ -136,7 +138,7 @@ body
       "usesrdf":(#{states[19].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[19].language.toString()}>1)?"Yes": "No"},
     "MD": {
-      "fillKey": "Red",
+      "fillKey": "#{states[20].usesmicrodata.toString()}",
       "statename":"#{states[20].name.toString()}",
       "olrc":(#{states[20].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[20].olvr.toString()}>0)? "Yes" : "No",
@@ -145,7 +147,7 @@ body
       "usesrdf":(#{states[20].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[20].language.toString()}>1)?"Yes": "No"},
     "ME": {
-      "fillKey": "Red",
+      "fillKey": "#{states[19].usesmicrodata.toString()}",
       "statename":"#{states[19].name.toString()}",
       "olrc":(#{states[19].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[19].olvr.toString()}>0)? "Yes" : "No",
@@ -154,7 +156,7 @@ body
       "usesrdf":(#{states[19].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[19].language.toString()}>1)?"Yes": "No"},
     "MA": {
-      "fillKey": "Red",
+      "fillKey": "#{states[21].usesmicrodata.toString()}",
       "statename":"#{states[21].name.toString()}",
       "olrc":(#{states[21].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[21].olvr.toString()}>0)? "Yes" : "No",
@@ -163,7 +165,7 @@ body
       "usesrdf":(#{states[21].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[21].language.toString()}>1)?"Yes": "No"},
     "MN": {
-      "fillKey": "Red",
+      "fillKey": "#{states[23].usesmicrodata.toString()}",
       "statename":"#{states[23].name.toString()}",
       "olrc":(#{states[23].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[23].olvr.toString()}>0)? "Yes" : "No",
@@ -172,7 +174,7 @@ body
       "usesrdf":(#{states[23].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[23].language.toString()}>1)?"Yes": "No"},
     "MI": {
-      "fillKey": "Red",
+      "fillKey": "#{states[22].usesmicrodata.toString()}",
       "statename":"#{states[22].name.toString()}",
       "olrc":(#{states[22].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[22].olvr.toString()}>0)? "Yes" : "No",
@@ -181,7 +183,7 @@ body
       "usesrdf":(#{states[22].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[22].language.toString()}>1)?"Yes": "No"},
     "MS": {
-      "fillKey": "Red",
+      "fillKey": "#{states[24].usesmicrodata.toString()}",
       "statename":"#{states[24].name.toString()}",
       "olrc":(#{states[24].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[24].olvr.toString()}>0)? "Yes" : "No",
@@ -190,7 +192,7 @@ body
       "usesrdf":(#{states[24].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[24].language.toString()}>1)?"Yes": "No"},
     "MO": {
-      "fillKey": "Red",
+      "fillKey": "#{states[25].usesmicrodata.toString()}",
       "statename":"#{states[25].name.toString()}",
       "olrc":(#{states[25].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[25].olvr.toString()}>0)? "Yes" : "No",
@@ -199,7 +201,7 @@ body
       "usesrdf":(#{states[25].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[25].language.toString()}>1)?"Yes": "No"},
     "MT": {
-      "fillKey": "Red",
+      "fillKey": "#{states[26].usesmicrodata.toString()}",
       "statename":"#{states[26].name.toString()}",
       "olrc":(#{states[26].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[26].olvr.toString()}>0)? "Yes" : "No",
@@ -208,7 +210,7 @@ body
       "usesrdf":(#{states[26].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[26].language.toString()}>1)?"Yes": "No"},
     "NC": {
-      "fillKey": "Green",
+      "fillKey": "#{states[33].usesmicrodata.toString()}",
       "statename":"#{states[33].name.toString()}",
       "olrc":(#{states[33].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[33].olvr.toString()}>0)? "Yes" : "No",
@@ -217,7 +219,7 @@ body
       "usesrdf":(#{states[33].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[33].language.toString()}>1)?"Yes": "No"},
     "NE": {
-      "fillKey": "Red",
+      "fillKey": "#{states[27].usesmicrodata.toString()}",
       "statename":"#{states[27].name.toString()}",
       "olrc":(#{states[27].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[27].olvr.toString()}>0)? "Yes" : "No",
@@ -226,7 +228,7 @@ body
       "usesrdf":(#{states[27].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[27].language.toString()}>1)?"Yes": "No"},
     "NV": {
-      "fillKey": "Red",
+      "fillKey": "#{states[28].usesmicrodata.toString()}",
       "statename":"#{states[28].name.toString()}",
       "olrc":(#{states[28].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[28].olvr.toString()}>0)? "Yes" : "No",
@@ -235,7 +237,7 @@ body
       "usesrdf":(#{states[28].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[28].language.toString()}>1)?"Yes": "No"},
     "NH": {
-      "fillKey": "Red",
+      "fillKey": "#{states[29].usesmicrodata.toString()}",
       "statename":"#{states[29].name.toString()}",
       "olrc":(#{states[29].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[29].olvr.toString()}>0)? "Yes" : "No",
@@ -244,7 +246,7 @@ body
       "usesrdf":(#{states[29].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[29].language.toString()}>1)?"Yes": "No"},
     "NJ": {
-      "fillKey": "Yellow",
+      "fillKey": "#{states[30].usesmicrodata.toString()}",
       "statename":"#{states[30].name.toString()}",
       "olrc":(#{states[30].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[30].olvr.toString()}>0)? "Yes" : "No",
@@ -253,7 +255,7 @@ body
       "usesrdf":(#{states[30].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[30].language.toString()}>1)?"Yes": "No"},
     "NY": {
-      "fillKey": "Yellow",
+      "fillKey": "#{states[33].usesmicrodata.toString()}",
       "statename":"#{states[33].name.toString()}",
       "olrc":(#{states[33].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[33].olvr.toString()}>0)? "Yes" : "No",
@@ -262,7 +264,7 @@ body
       "usesrdf":(#{states[33].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[33].language.toString()}>1)?"Yes": "No"},
     "ND": {
-      "fillKey": "Yellow",
+      "fillKey": "#{states[34].usesmicrodata.toString()}",
       "statename":"#{states[34].name.toString()}",
       "olrc":(#{states[34].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[34].olvr.toString()}>0)? "Yes" : "No",
@@ -271,7 +273,7 @@ body
       "usesrdf":(#{states[34].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[34].language.toString()}>1)?"Yes": "No"},
     "NM": {
-      "fillKey": "Yellow",
+      "fillKey": "#{states[31].usesmicrodata.toString()}",
       "statename":"#{states[31].name.toString()}",
       "olrc":(#{states[31].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[31].olvr.toString()}>0)? "Yes" : "No",
@@ -280,7 +282,7 @@ body
       "usesrdf":(#{states[31].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[31].language.toString()}>1)?"Yes": "No"},
     "OH": {
-      "fillKey": "Yellow",
+      "fillKey": "#{states[35].usesmicrodata.toString()}",
       "statename":"#{states[35].name.toString()}",
       "olrc":(#{states[35].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[35].olvr.toString()}>0)? "Yes" : "No",
@@ -289,7 +291,7 @@ body
       "usesrdf":(#{states[35].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[35].language.toString()}>1)?"Yes": "No"},
     "OK": {
-      "fillKey": "Yellow",
+      "fillKey": "#{states[36].usesmicrodata.toString()}",
       "statename":"#{states[36].name.toString()}",
       "olrc":(#{states[36].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[36].olvr.toString()}>0)? "Yes" : "No",
@@ -298,7 +300,7 @@ body
       "usesrdf":(#{states[36].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[36].language.toString()}>1)?"Yes": "No"},
     "OR": {
-      "fillKey": "Green",
+      "fillKey": "#{states[37].usesmicrodata.toString()}",
       "statename":"#{states[37].name.toString()}",
       "olrc":(#{states[37].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[37].olvr.toString()}>0)? "Yes" : "No",
@@ -307,7 +309,7 @@ body
       "usesrdf":(#{states[37].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[37].language.toString()}>1)?"Yes": "No"},
     "PA": {
-      "fillKey": "Green",
+      "fillKey": "#{states[38].usesmicrodata.toString()}",
       "statename":"#{states[38].name.toString()}",
       "olrc":(#{states[38].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[38].olvr.toString()}>0)? "Yes" : "No",
@@ -316,7 +318,7 @@ body
       "usesrdf":(#{states[38].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[38].language.toString()}>1)?"Yes": "No"},
     "RI": {
-      "fillKey": "Green",
+      "fillKey": "#{states[39].usesmicrodata.toString()}",
       "statename":"#{states[39].name.toString()}",
       "olrc":(#{states[39].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[39].olvr.toString()}>0)? "Yes" : "No",
@@ -325,7 +327,7 @@ body
       "usesrdf":(#{states[39].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[39].language.toString()}>1)?"Yes": "No"},
     "SC": {
-      "fillKey": "Green",
+      "fillKey": "#{states[40].usesmicrodata.toString()}",
       "statename":"#{states[40].name.toString()}",
       "olrc":(#{states[40].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[40].olvr.toString()}>0)? "Yes" : "No",
@@ -334,7 +336,7 @@ body
       "usesrdf":(#{states[40].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[40].language.toString()}>1)?"Yes": "No"},
     "SD": {
-      "fillKey": "Green",
+      "fillKey": "#{states[41].usesmicrodata.toString()}",
       "statename":"#{states[41].name.toString()}",
       "olrc":(#{states[41].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[41].olvr.toString()}>0)? "Yes" : "No",
@@ -343,7 +345,7 @@ body
       "usesrdf":(#{states[41].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[41].language.toString()}>1)?"Yes": "No"},
     "TN": {
-      "fillKey": "Green",
+      "fillKey": "#{states[42].usesmicrodata.toString()}",
       "statename":"#{states[42].name.toString()}",
       "olrc":(#{states[42].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[42].olvr.toString()}>0)? "Yes" : "No",
@@ -352,7 +354,7 @@ body
       "usesrdf":(#{states[42].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[42].language.toString()}>1)?"Yes": "No"},
     "TX": {
-      "fillKey": "Green",
+      "fillKey": "#{states[43].usesmicrodata.toString()}",
       "statename":"#{states[43].name.toString()}",
       "olrc":(#{states[43].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[43].olvr.toString()}>0)? "Yes" : "No",
@@ -361,7 +363,7 @@ body
       "usesrdf":(#{states[43].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[43].language.toString()}>1)?"Yes": "No"},
     "UT": {
-      "fillKey": "Green",
+      "fillKey": "#{states[44].usesmicrodata.toString()}",
       "statename":"#{states[44].name.toString()}",
       "olrc":(#{states[44].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[44].olvr.toString()}>0)? "Yes" : "No",
@@ -370,7 +372,7 @@ body
       "usesrdf":(#{states[44].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[44].language.toString()}>1)?"Yes": "No"},
     "WI": {
-      "fillKey": "Green",
+      "fillKey": "#{states[49].usesmicrodata.toString()}",
       "statename":"#{states[49].name.toString()}",
       "olrc":(#{states[49].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[49].olvr.toString()}>0)? "Yes" : "No",
@@ -379,7 +381,7 @@ body
       "usesrdf":(#{states[49].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[49].language.toString()}>1)?"Yes": "No"},
     "VA": {
-      "fillKey": "Green",
+      "fillKey": "#{states[46].usesmicrodata.toString()}",
       "statename":"#{states[46].name.toString()}",
       "olrc":(#{states[46].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[46].olvr.toString()}>0)? "Yes" : "No",
@@ -388,7 +390,7 @@ body
       "usesrdf":(#{states[46].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[46].language.toString()}>1)?"Yes": "No"},
     "VT": {
-      "fillKey": "Green",
+      "fillKey": "#{states[45].usesmicrodata.toString()}",
       "statename":"#{states[45].name.toString()}",
       "olrc":(#{states[45].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[45].olvr.toString()}>0)? "Yes" : "No",
@@ -397,7 +399,7 @@ body
       "usesrdf":(#{states[45].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[45].language.toString()}>1)?"Yes": "No"},
     "WA": {
-      "fillKey": "Green",
+      "fillKey": "#{states[47].usesmicrodata.toString()}",
       "statename":"#{states[47].name.toString()}",
       "olrc":(#{states[47].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[47].olvr.toString()}>0)? "Yes" : "No",
@@ -406,7 +408,7 @@ body
       "usesrdf":(#{states[47].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[47].language.toString()}>1)?"Yes": "No"},
     "WV": {
-      "fillKey": "Green",
+      "fillKey": "#{states[48].usesmicrodata.toString()}",
       "statename":"#{states[48].name.toString()}",
       "olrc":(#{states[48].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[48].olvr.toString()}>0)? "Yes" : "No",
@@ -415,8 +417,8 @@ body
       "usesrdf":(#{states[48].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[48].language.toString()}>1)?"Yes": "No"},
     "WY": {
-      "fillKey": "Green",
-      "statename":"#{states[0].name.toString()}",
+      "fillKey": "#{states[50].usesmicrodata.toString()}",
+      "statename":"#{states[50].name.toString()}",
       "olrc":(#{states[50].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[50].olvr.toString()}>0)? "Yes" : "No",
       "microdata":(#{states[50].usesmicrodata.toString()}>0)? "Yes": "No",
@@ -424,7 +426,7 @@ body
       "usesrdf":(#{states[50].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[50].language.toString()}>1)?"Yes": "No"},
     "CA": {
-      "fillKey": "Green",
+      "fillKey": "#{states[4].usesmicrodata.toString()}",
       "statename":"#{states[4].name.toString()}",
       "olrc":(#{states[4].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[4].olvr.toString()}>0)? "Yes" : "No",
@@ -433,7 +435,7 @@ body
       "usesrdf":(#{states[4].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[4].language.toString()}>1)?"Yes": "No"},
     "CT": {
-      "fillKey": "Green",
+      "fillKey": "#{states[6].usesmicrodata.toString()}",
       "statename":"#{states[6].name.toString()}",
       "olrc":(#{states[6].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[6].olvr.toString()}>0)? "Yes" : "No",
@@ -442,7 +444,7 @@ body
       "usesrdf":(#{states[6].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[6].language.toString()}>1)?"Yes": "No"},
     "AK": {
-      "fillKey": "Green",
+      "fillKey": "#{states[1].usesmicrodata.toString()}",
       "statename":"#{states[1].name.toString()}",
       "olrc":(#{states[1].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[1].olvr.toString()}>0)? "Yes" : "No",
@@ -451,7 +453,7 @@ body
       "usesrdf":(#{states[1].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[1].language.toString()}>1)?"Yes": "No"},
     "AR": {
-      "fillKey": "Green",
+      "fillKey": "#{states[3].usesmicrodata.toString()}",
       "statename":"#{states[3].name.toString()}",
       "olrc":(#{states[3].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[3].olvr.toString()}>0)? "Yes" : "No",
@@ -460,7 +462,7 @@ body
       "usesrdf":(#{states[3].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[3].language.toString()}>1)?"Yes": "No"},
     "DC": {
-      "fillKey": "Green",
+      "fillKey": "#{states[7].usesmicrodata.toString()}",
       "statename":"#{states[7].name.toString()}",
       "olrc":(#{states[7].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[7].olvr.toString()}>0)? "Yes" : "No",
@@ -469,7 +471,7 @@ body
       "usesrdf":(#{states[7].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[7].language.toString()}>1)?"Yes": "No"},
     "AL": {
-      "fillKey": "Green",
+      "fillKey": "#{states[0].usesmicrodata.toString()}",
       "statename":"#{states[0].name.toString()}",
       "olrc":(#{states[0].olrc.toString()}>0)? "Yes" : "No",
       "olvr":(#{states[0].olvr.toString()}>0)? "Yes" : "No",
@@ -478,11 +480,7 @@ body
       "usesrdf":(#{states[0].usesrdf.toString()}>0)? "Yes" : "No",
       "language":(#{states[0].language.toString()}>1)?"Yes": "No"}}});
       election.labels();
-  h1
-    | Consolidated Citizen Services Sprint - Status Page
 
-  h2
-    | States using OGP:
   table
     tr
       td # of States Counted
